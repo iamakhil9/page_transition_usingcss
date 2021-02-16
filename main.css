@@ -1,0 +1,68 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.container
+{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: auto;
+	scroll-snap-type: y mandatory;
+
+}
+
+.container .section{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background-blend-mode: multiply;
+	scroll-snap-align:start ;
+}
+.container .section:nth-child(1){
+	background: #ff0 url(p1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.container .section:nth-child(2){
+	background: #0f0 url(p2.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.container .section:nth-child(3){
+	background: #00f url(p3.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.container .section:nth-child(4){
+	background: #f00 url(p4.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.container .section:nth-child(5){
+	background: #f0f url(p5.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.container .section .context{
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+	max-width: 700px;
+}
+.container .section .context h2{
+	background: #fff;
+	color: #111;
+	font-weight: 600;
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 2em;
+}
+.container .section .context p{
+	background: #fff;
+	color: #111;
+	font-weight: 300;
+	padding: 10px 20px;
+	margin-top: 10px;
+}
